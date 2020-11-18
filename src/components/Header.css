@@ -1,0 +1,22 @@
+header {
+  margin-top: 5rem;
+  position: relative;
+}
+
+.header-description {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.header-description-children button {
+  background: #69C6FA;
+  border: #69C6FA;
+  border-radius: 6px;
+}
+
+

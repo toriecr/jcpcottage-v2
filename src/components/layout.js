@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
+import Header from "./Header"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -33,6 +34,7 @@ const Layout = ({ children }) => {
     <>
       <Navbar toggleSidebar={toggleSidebar} />
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
+      <Header />
       <div
         style={{
           margin: `0 auto`,

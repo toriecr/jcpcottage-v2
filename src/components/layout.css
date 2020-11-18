@@ -1,5 +1,6 @@
 @import 'Navbar.css';
 @import 'Sidebar.css';
+@import "Header.css";
 
 html {
   -ms-text-size-adjust: 100%;
