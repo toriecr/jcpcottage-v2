@@ -9,7 +9,8 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
+import Navbar from "./Navbar"
+import Sidebar from "./Sidebar"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -23,9 +24,15 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const [isOpen, setIsOpen] = React.useState(false);
+  const toggleSidebar = () => {
+    setIsOpen(!isOpen);
+  }
+
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Navbar toggleSidebar={toggleSidebar} />
+      <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       <div
         style={{
           margin: `0 auto`,
