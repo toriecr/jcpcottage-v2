@@ -2,6 +2,7 @@
 @import 'Sidebar.css';
 @import "Header.css";
 @import "Services.css";
+@import "Pictures.css";
 
 html {
   -ms-text-size-adjust: 100%;
