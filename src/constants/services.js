@@ -1,24 +1,27 @@
 import React from "react"
 import { FaHandHoldingHeart, FaBed } from "react-icons/fa"
 import { GiCctvCamera } from "react-icons/gi"
+import { BsHouseDoorFill } from "react-icons/bs"
 const services = [
   {
     id: 1, 
-    icon: <FaHandHoldingHeart />,
-    title: "24/7 Care and Supervision",
-    description: "A caregiver is always on site 24 hours a day, 7 days a week."
+    icon: <FaHandHoldingHeart className="service-icon" />,
+    title: "24/7 Care and Supervision"
   }, 
   {
     id: 2, 
-    icon: <GiCctvCamera />,
-    title: "Secured Facility",
-    description: "This facility uses surveillance cameras to protect the safety of residents."
+    icon: <GiCctvCamera className="service-icon" />,
+    title: "Secured Facility"
   }, 
   {
     id: 3, 
-    icon: <FaBed />,
-    title: "Six Private Bedrooms",
-    description: "Our facility consists of six private bedrooms to ensure the privacy and comfort of our residents."
+    icon: <FaBed className="service-icon" />,
+    title: "Six Private Bedrooms"
+  },
+  {
+    id: 4,
+    icon: <BsHouseDoorFill className="service-icon" />,
+    title: "Peaceful Neighborhood"
   }
 ]
 

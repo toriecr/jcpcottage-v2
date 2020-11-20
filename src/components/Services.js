@@ -2,16 +2,19 @@ import React from "react"
 import services from "../constants/services"
 
 const Services = () => {
-  return <section className="services">
+  return <section>
     <h1>What we offer</h1>
-    <div>
+    <div className="services-container">
       {services.map(service => {
-        const { id, icon, title, description } = service;
+        const { id, icon, title } = service;
         return (
-          <article key={id}>
-            {icon}
-            <h4>{title}</h4>
-            <p>{description}</p>
+          <article key={id} className="service">
+            <div className="service-children">
+              <div className="service-icon-container">
+                {icon}
+              </div>
+              <h4>{title}</h4>
+            </div>
           </article>
         )
       })}
