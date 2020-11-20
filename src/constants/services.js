@@ -6,23 +6,27 @@ const services = [
   {
     id: 1, 
     icon: <FaHandHoldingHeart className="service-icon" />,
-    title: "24/7 Care and Supervision"
+    title: "24/7 Care",
+    description: "A caregiver is always on site, 24 hours a day, 7 days a week."
   }, 
   {
     id: 2, 
     icon: <GiCctvCamera className="service-icon" />,
-    title: "Secured Facility"
+    title: "Secured Facility",
+    description: "CCTV is used for the safety of residents."
   }, 
   {
     id: 3, 
     icon: <FaBed className="service-icon" />,
-    title: "Six Private Bedrooms"
+    title: "6 Bedrooms",
+    description: "Private bedrooms to ensure the comfort of our residents."
   },
-  {
-    id: 4,
-    icon: <BsHouseDoorFill className="service-icon" />,
-    title: "Peaceful Neighborhood"
-  }
+  // {
+  //   id: 4,
+  //   icon: <BsHouseDoorFill className="service-icon" />,
+  //   title: "Community",
+  //   description: "To feel more like home."
+  // }
 ]
 
 export default services;

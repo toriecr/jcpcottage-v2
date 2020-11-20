@@ -1,12 +1,13 @@
 import React from "react"
 import services from "../constants/services"
+import Title from "./Title"
 
 const Services = () => {
   return <section>
-    <h1>What we offer</h1>
+    <Title title="What we offer" />
     <div className="services-container">
       {services.map(service => {
-        const { id, icon, title } = service;
+        const { id, icon, title, description } = service;
         return (
           <article key={id} className="service">
             <div className="service-children">
@@ -14,6 +15,7 @@ const Services = () => {
                 {icon}
               </div>
               <h4>{title}</h4>
+              <p>{description}</p>
             </div>
           </article>
         )
