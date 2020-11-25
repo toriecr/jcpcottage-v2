@@ -14,6 +14,7 @@ import Sidebar from "./Sidebar"
 import Header from "./Header"
 import Mission from "./Mission"
 import Map from "./Map"
+import Contact from "./Contact"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -48,6 +49,7 @@ const Layout = ({ children }) => {
       </div>
       <Mission />
       <Map />
+      <Contact />
       <footer style={{
           marginTop: `2rem`,
           backgroundColor: `green`,
