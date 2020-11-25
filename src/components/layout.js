@@ -13,6 +13,7 @@ import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
 import Header from "./Header"
 import Mission from "./Mission"
+import Map from "./Map"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -46,6 +47,7 @@ const Layout = ({ children }) => {
         <main>{children}</main>
       </div>
       <Mission />
+      <Map />
       <footer style={{
           marginTop: `2rem`,
           backgroundColor: `green`,
@@ -53,7 +55,7 @@ const Layout = ({ children }) => {
           © {new Date().getFullYear()}, Built with
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
+      </footer>
     </>
   )
 }
