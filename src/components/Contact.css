@@ -1,0 +1,13 @@
+.contact {
+  display: grid;
+  place-items: center;
+}
+
+.form-inputs {
+  padding: 1rem 1.5rem;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 1.25rem;
+}

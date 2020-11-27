@@ -1,17 +1,41 @@
 import React from "react"
 
 const Contact = () => {
-  return <section>
+  return <section className="contact">
     <form>
-      <label htmlFor="nameInput">Name</label>
-      <input type="text" name="name" placeholder="NAME" id="nameInput" required />
-      <label htmlFor="emailInput">Email</label>
-      <input type="email" name="email" placeholder="EMAIL" id="emailInput" required />
-      <label htmlFor="message">Message</label>
-      <textarea name="message" placeholder="MESSAGE" id="message" required></textarea>
-      <button type="submit">Send</button>
+      <div className="form-inputs">
+        <input type="text" name="name" placeholder="Name" className="input" />
+        <input type="email" name="email" placeholder="Email" className="input"/>
+        <textarea
+          name="message"
+          rows="5"
+          placeholder="message"
+          className="input"
+        ></textarea>
+      </div>
+      <button type="submit">Submit</button>
     </form>
   </section>
+//   return <section className="contact-page">
+//   <article className="contact-form">
+//     <h3>get in touch</h3>
+//     <form action="https://formspree.io/f/xbjpowrd" method="POST">
+//       <div className="form-group">
+//         <input type="text" name="name" placeholder="name" className="form-control" />
+//         <input type="email" name="email" placeholder="email" className="form-control" />
+//         <textarea 
+//           name="message" 
+//           rows="5"
+//           placeholder="message"
+//           className="form-control"
+//           ></textarea>
+//       </div>
+//       <button type="submit" className="submit-btn btn">
+//         submit here
+//       </button>
+//     </form>
+//   </article>
+// </section>
 }
 
 export default Contact;
