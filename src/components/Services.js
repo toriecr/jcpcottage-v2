@@ -11,6 +11,7 @@ const Services = () => {
     padding: `0 1.0875rem 1.45rem`,
   }}>
     <Title title="What we offer" />
+    <div className="underline"></div>
     <div className="services-container">
       {services.map(service => {
         const { id, icon, title, description } = service;

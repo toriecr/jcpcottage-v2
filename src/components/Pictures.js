@@ -10,6 +10,7 @@ const Pictures = () => {
     padding: `0 1.0875rem 1.45rem`,
   }}>
     <Title title="Explore Our Facility" />
+    <div className="underline"></div>
     <div className="pictures-container">
       <div className="pic1">
         <Image imgsrc="bedroom.jpg" />

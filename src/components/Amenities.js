@@ -10,8 +10,12 @@ const Amenities = () => {
     padding: `0 1.0875rem 1.45rem`,
   }}>
     <Title title="Facility Amenities" />
+    <div className="underline"></div>
     <div className="amenities-container">
-      <ul>
+      <ul
+      style={{
+        listStyleType: `none`,
+      }}>
         {amenities.map(amenity =>{
           const { id, icon, text } = amenity;
           return (

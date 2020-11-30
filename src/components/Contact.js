@@ -4,6 +4,7 @@ import Title from "./Title"
 const Contact = () => {
   return <section className="contact">
     <Title title="Contact Us" />
+    <div className="underline"></div>
     <div className="form">
       <form>
         <div className="form-inputs">
