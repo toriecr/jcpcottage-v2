@@ -3,7 +3,12 @@ import Image from "./Image"
 import Title from "./Title"
 
 const Pictures = () => {
-  return <section>
+  return <section
+  style={{
+    margin: `0 auto`,
+    maxWidth: 1170,
+    padding: `0 1.0875rem 1.45rem`,
+  }}>
     <Title title="Explore Our Facility" />
     <div className="pictures-container">
       <div className="pic1">

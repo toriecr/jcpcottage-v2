@@ -17,6 +17,12 @@ header {
   background: #69C6FA;
   border: #69C6FA;
   border-radius: 6px;
+  padding: 1rem 1.25rem;
+}
+
+header p {
+  color: white;
+  font-weight: 600;
 }
 
 

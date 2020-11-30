@@ -12,7 +12,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Navbar from "./Navbar"
 import Sidebar from "./Sidebar"
 import Header from "./Header"
-import Mission from "./Mission"
 import Map from "./Map"
 import Contact from "./Contact"
 import "./layout.css"
@@ -38,20 +37,13 @@ const Layout = ({ children }) => {
       <Navbar toggleSidebar={toggleSidebar} />
       <Sidebar isOpen={isOpen} toggleSidebar={toggleSidebar} />
       <Header />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 1170,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div>
         <main>{children}</main>
       </div>
-      <Mission />
-      <Map />
       <Contact />
+      <Map />
       <footer style={{
-          marginTop: `2rem`,
+          // marginTop: `2rem`,
           backgroundColor: `green`,
         }}>
           © {new Date().getFullYear()}, Built with

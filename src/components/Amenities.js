@@ -3,7 +3,12 @@ import Title from "./Title"
 import amenities from "../constants/amenities"
 
 const Amenities = () => {
-  return <section>
+  return <section
+  style={{
+    margin: `0 auto`,
+    maxWidth: 1170,
+    padding: `0 1.0875rem 1.45rem`,
+  }}>
     <Title title="Facility Amenities" />
     <div className="amenities-container">
       <ul>

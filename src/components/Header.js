@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const Header = () => {
   const data = useStaticQuery(graphql`
     {
-      image: file(relativePath: {eq: "header.jpg"}) {
+      image: file(relativePath: {eq: "header2.jpg"}) {
         id
         childImageSharp {
           fluid(maxWidth: 2592) {
@@ -22,7 +22,7 @@ const Header = () => {
       <div className="header-description">
         <div className="header-description-children">
           <p>Where Joy, Caring, and Passion come together.</p>
-          <button>Learn more</button>
+          <button>LEARN MORE</button>
         </div>
       </div>
     </div>

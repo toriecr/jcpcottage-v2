@@ -3,7 +3,13 @@ import services from "../constants/services"
 import Title from "./Title"
 
 const Services = () => {
-  return <section>
+  return <section
+  style={{
+    margin: `0 auto`,
+    marginBottom: `4rem`,
+    maxWidth: 1170,
+    padding: `0 1.0875rem 1.45rem`,
+  }}>
     <Title title="What we offer" />
     <div className="services-container">
       {services.map(service => {

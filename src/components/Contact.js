@@ -1,20 +1,26 @@
 import React from "react"
+import Title from "./Title"
 
 const Contact = () => {
   return <section className="contact">
-    <form>
-      <div className="form-inputs">
-        <input type="text" name="name" placeholder="Name" className="input" />
-        <input type="email" name="email" placeholder="Email" className="input"/>
-        <textarea
-          name="message"
-          rows="5"
-          placeholder="message"
-          className="input"
-        ></textarea>
-      </div>
-      <button type="submit">Submit</button>
-    </form>
+    <Title title="Contact Us" />
+    <div className="form">
+      <form>
+        <div className="form-inputs">
+          <input type="text" name="name" placeholder="Name" className="input" />
+          <input type="email" name="email" placeholder="Email" className="input"/>
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="message"
+            className="input"
+          ></textarea>
+        </div>
+        <div className="button">
+          <button type="submit" className="submit-btn">Submit</button>
+        </div>
+      </form>
+    </div>
   </section>
 //   return <section className="contact-page">
 //   <article className="contact-form">
