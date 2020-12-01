@@ -21,7 +21,7 @@ const Header = () => {
       <Img fluid={data.image.childImageSharp.fluid} />
       <div className="header-description">
         <div className="header-description-children">
-          <p>Where Joy, Caring, and Passion come together.</p>
+          <h3>Where Joy, Caring, and Passion come together.</h3>
           <button>LEARN MORE</button>
         </div>
       </div>

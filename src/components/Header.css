@@ -4,23 +4,28 @@ header {
 }
 
 .header-description {
+  /* to place words and button over picture 
+  as a div taking up entire parent height and width*/
   position: absolute;
   top: 0;
   height: 100%;
   width: 100%;
+
   display: grid;
   place-items: center;
-  text-align: center;
+  padding: 2rem;
 }
 
 .header-description-children button {
   background: #69C6FA;
   border: #69C6FA;
+  color: white;
   border-radius: 6px;
-  padding: 1rem 1.25rem;
+  padding: 1em 1.25em;
+  font-size: small;
 }
 
-header p {
+header h3 {
   color: white;
   font-weight: 600;
 }
