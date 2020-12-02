@@ -21,7 +21,7 @@ const Services = () => {
               <div className="service-icon-container">
                 {icon}
               </div>
-              <h4>{title}</h4>
+              <h3>{title}</h3>
               <p>{description}</p>
             </div>
           </article>
