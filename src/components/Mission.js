@@ -1,23 +1,31 @@
 import React from "react"
-import { Parallax, Background } from 'react-parallax';
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
-const image1 = "https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D";
+const Mission = () => {
+  const data = useStaticQuery(graphql`
+    {
+      image: file(relativePath: {eq: "mission.jpg"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 2592) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
 
-const insideStyles = {
-  background: "white",
-  padding: 20,
-  position: "absolute",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%,-50%)"
-};
- 
-const Mission = () => (
-  <Parallax bgImage={image1} strength={500}>
-    <div style={{ height: 500 }}>
-      <div style={insideStyles}>HTML inside the parallax</div>
+  return <section className="mission">
+    <div className="mission-description">
+      <h2>Our Mission</h2>
+      <p>At JCP Cottage, our mission is to provide compassionate care in a home setting.</p>
     </div>
-  </Parallax>
-);
+    <div className="mission-img">
+      <Img fluid={data.image.childImageSharp.fluid} /> 
+      <div className="gradient"></div>
+    </div>
+  </section>
+}
 
 export default Mission;

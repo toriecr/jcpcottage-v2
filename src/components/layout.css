@@ -5,6 +5,7 @@
 @import "Pictures.css";
 @import "Title.css";
 @import "Contact.css";
+@import "Mission.css";
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Vollkorn&display=swap');
 
@@ -274,9 +275,10 @@ h2 {
   margin-bottom: 1.45rem;
   /* color: inherit; */
   color: #3a5668;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  font-weight: bold;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+    font-family: 'Vollkorn', serif;
+  font-weight: 400;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
   line-height: 1.1;
