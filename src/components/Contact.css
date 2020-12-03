@@ -3,6 +3,14 @@
   padding-bottom: 4rem;
 }
 
+.contact-container {
+  position: relative;
+}
+
+.contact-image {
+  display: none;
+}
+
 .form-inputs {
   padding: 1rem 1.5rem;
 }
@@ -21,5 +29,18 @@
 .submit-btn {
   width: 100%;
   padding: 1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact-image {
+    display: initial;
+  }
+
+  .form {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+  }
 }
 

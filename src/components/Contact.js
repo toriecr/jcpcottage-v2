@@ -1,26 +1,44 @@
 import React from "react"
 import Title from "./Title"
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 const Contact = () => {
+  const data = useStaticQuery(graphql`
+    {
+      image: file(relativePath: {eq: "contact.jpg"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 2592) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return <section className="contact">
-    <Title title="Contact Us" />
-    <div className="underline"></div>
-    <div className="form">
-      <form>
-        <div className="form-inputs">
-          <input type="text" name="name" placeholder="Name" className="input" />
-          <input type="email" name="email" placeholder="Email" className="input"/>
-          <textarea
-            name="message"
-            rows="5"
-            placeholder="message"
-            className="input"
-          ></textarea>
-        </div>
-        <div className="button">
-          <button type="submit" className="submit-btn">Submit</button>
-        </div>
-      </form>
+    <div className="contact-container">
+      <Img fluid={data.image.childImageSharp.fluid} className="contact-image" /> 
+      <div className="form">
+        <Title title="Contact Us" className="title" />
+        <div className="underline"></div>
+        <form>
+          <div className="form-inputs">
+            <input type="text" name="name" placeholder="Name" className="input" />
+            <input type="email" name="email" placeholder="Email" className="input"/>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="message"
+              className="input"
+            ></textarea>
+          </div>
+          <div className="button">
+            <button type="submit" className="submit-btn">Submit</button>
+          </div>
+        </form>
+      </div>
     </div>
   </section>
 //   return <section className="contact-page">
