@@ -1,15 +1,14 @@
 import React from "react"
-import Title from "./Title"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
 const Contact = () => {
   const data = useStaticQuery(graphql`
     {
-      image: file(relativePath: {eq: "contact.jpg"}) {
+      image: file(relativePath: {eq: "phone.jpg"}) {
         id
         childImageSharp {
-          fluid(maxWidth: 2592) {
+          fluid(maxHeight: 900) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -18,20 +17,28 @@ const Contact = () => {
   `)
 
   return <section className="contact">
-    <div className="contact-container">
-      <Img fluid={data.image.childImageSharp.fluid} className="contact-image" /> 
+    <div className="contact-img">
+      <Img fluid={data.image.childImageSharp.fluid} />   
+      <div className="contact-gradient"></div>
+    </div>
+    <div className="form-parent">
       <div className="form">
-        <Title title="Contact Us" className="title" />
-        <div className="underline"></div>
+        <div className="contact-title">
+          <h1>Looking for Advice?</h1>
+          <h3>Your request will be answered within 24 hours.</h3>
+        </div>
+        <div className="contact-underline"></div>
         <form>
           <div className="form-inputs">
-            <input type="text" name="name" placeholder="Name" className="input" />
-            <input type="email" name="email" placeholder="Email" className="input"/>
+            <div className="name-email">
+              <input type="text" name="name" placeholder="Name" className="input input-name" />
+              <input type="email" name="email" placeholder="Email" className="input"/>
+            </div>
             <textarea
               name="message"
               rows="5"
               placeholder="message"
-              className="input"
+              className="input-textarea"
             ></textarea>
           </div>
           <div className="button">
@@ -41,26 +48,6 @@ const Contact = () => {
       </div>
     </div>
   </section>
-//   return <section className="contact-page">
-//   <article className="contact-form">
-//     <h3>get in touch</h3>
-//     <form action="https://formspree.io/f/xbjpowrd" method="POST">
-//       <div className="form-group">
-//         <input type="text" name="name" placeholder="name" className="form-control" />
-//         <input type="email" name="email" placeholder="email" className="form-control" />
-//         <textarea 
-//           name="message" 
-//           rows="5"
-//           placeholder="message"
-//           className="form-control"
-//           ></textarea>
-//       </div>
-//       <button type="submit" className="submit-btn btn">
-//         submit here
-//       </button>
-//     </form>
-//   </article>
-// </section>
 }
 
 export default Contact;

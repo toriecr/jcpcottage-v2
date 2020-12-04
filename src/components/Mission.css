@@ -27,14 +27,11 @@
     position: relative;
   }
 
-  .gradient {
+  .mission-gradient {
     position: absolute;
     top: 0;
     height: 100%;
     width: 100%;
-
-    /* background-color: white;
-    opacity: 0.8; */
 
     background: linear-gradient(to left, rgba(255,255,255,0.2), 
     rgba(255,255,255,0.4), 

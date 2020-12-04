@@ -23,7 +23,7 @@ const Mission = () => {
     </div>
     <div className="mission-img">
       <Img fluid={data.image.childImageSharp.fluid} /> 
-      <div className="gradient"></div>
+      <div className="mission-gradient"></div>
     </div>
   </section>
 }
