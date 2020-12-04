@@ -11,19 +11,19 @@ const services = [
   {
     id: 2, 
     icon: <GiCctvCamera className="service-icon" />,
-    title: "Secured Facility",
-    description: "CCTV is used for the safety of residents."
+    title: "Security",
+    description: "CCTV is used for the safety of residents and staff."
   }, 
   {
     id: 3, 
     icon: <FaBed className="service-icon" />,
     title: "6 Bedrooms",
-    description: "Private bedrooms to ensure the comfort of our residents."
+    description: "A small, intimate facility to feel like home."
   },
   {
     id: 4,
     icon: <FaWheelchair className="service-icon" />,
-    title: "Personalized Care",
+    title: "Personalization",
     description: "Customizable care plans to fit all needs."
   }
 ]

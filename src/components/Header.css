@@ -25,9 +25,29 @@ header {
   font-size: small;
 }
 
+header h1 {
+  display: none;
+}
+
 header h3 {
   color: white;
   font-weight: 600;
+}
+
+@media only screen and (min-width: 1024px) {
+  .header-description {
+    text-align: center;
+
+  }
+
+  header h1 {
+    display: grid;
+    color: white;
+  }
+
+  header h3 {
+    display: none;
+  }
 }
 
 
