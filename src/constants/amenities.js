@@ -10,13 +10,13 @@ const amenities = [
   },
   {
     id: 2, 
-    icon: <GiBroom className="amenities-icon" />,
-    text: "Daily Housekeeping."
-  },
-  {
-    id: 3, 
     icon: <FaWalking className="amenities-icon" />,
     text: "Daily physical fitness activities and planned event coordination."
+  },
+  {
+    id: 3,
+    icon: <GiScissors className="amenities-icon" />,
+    text: "Coordinated beautician appointments including haircuts, manicures, and pedicures."
   },
   {
     id: 4,
@@ -25,23 +25,23 @@ const amenities = [
   },
   {
     id: 5,
-    icon: <GiScissors className="amenities-icon" />,
-    text: "Coordinated beautician appointments including haircuts, manicures, and pedicures."
-  },
-  {
-    id: 6,
-    icon: <FaUserNurse className="amenities-icon" />,
-    text: "Trained staff 24/7."
-  },
-  {
-    id: 7,
     icon: <FaCarSide className="amenities-icon" />,
     text: "Coordinated transportation to attend medical appointments."
   },
   {
-    id: 8,
+    id: 6,
     icon: <FaToilet className="amenities-icon" />,
     text: "Customized bathrooms tailored to seniors."
+  },
+  {
+    id: 7, 
+    icon: <GiBroom className="amenities-icon" />,
+    text: "Daily Housekeeping."
+  },
+  {
+    id: 8,
+    icon: <FaUserNurse className="amenities-icon" />,
+    text: "Trained staff 24/7."
   }
 ]
 
