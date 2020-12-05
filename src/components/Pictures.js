@@ -1,8 +1,38 @@
 import React from "react"
-import Image from "./Image"
+import Img from "gatsby-image"
+import { graphql, useStaticQuery } from "gatsby"
 import Title from "./Title"
 
 const Pictures = () => {
+  const data = useStaticQuery(graphql`
+    {
+      image1: file(relativePath: {eq: "bedroom.jpg"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 2592) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      image2: file(relativePath: {eq: "backyard.jpg"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 2592) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      image3: file(relativePath: {eq: "livingroom.jpg"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 2592) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return <section
   style={{
     margin: `0 auto`,
@@ -13,13 +43,13 @@ const Pictures = () => {
     <div className="underline"></div>
     <div className="pictures-container">
       <div className="pic1">
-        <Image imgsrc="bedroom.jpg" />
+        <Img fluid={data.image1.childImageSharp.fluid} />
       </div>
       <div className="pic2">
-        <Image imgsrc="backyard.jpg" />
+        <Img fluid={data.image2.childImageSharp.fluid} />
       </div>
       <div className="pic3">
-        <Image imgsrc="livingroom.jpg" />
+        <Img fluid={data.image3.childImageSharp.fluid} />
       </div>
     </div>
     <div className="pictures-button">

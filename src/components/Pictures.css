@@ -1,6 +1,7 @@
 .pictures-container {
   display: grid;
   place-items: center;
+  row-gap: 1rem;
 }
 
 .pic1 {
@@ -20,4 +21,8 @@
   place-items: center;
   margin-top: 2rem;
   margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  
 }
