@@ -69,6 +69,14 @@
   padding: 1rem 1.5rem;
 }
 
+.button button {
+  background: #69C6FA;
+  border: #69C6FA;
+  color: white;
+  border-radius: 6px;
+  padding: 1em 1.25em;
+}
+
 .submit-btn {
   width: 50%;
   padding: 1rem;
