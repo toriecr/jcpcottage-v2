@@ -9,7 +9,7 @@ const Pictures = () => {
       image1: file(relativePath: {eq: "bedroom.jpg"}) {
         id
         childImageSharp {
-          fluid(maxWidth: 2592) {
+          fluid(maxWidth: 300, maxHeight: 430) {
             ...GatsbyImageSharpFluid
           }
         }
@@ -49,7 +49,11 @@ const Pictures = () => {
         <Img fluid={data.image2.childImageSharp.fluid} />
       </div>
       <div className="pic3">
-        <Img fluid={data.image3.childImageSharp.fluid} />
+        <Img 
+          fluid={data.image3.childImageSharp.fluid} 
+          style={{maxHeight: '500px'}}
+          imgStyle={{ objectFit: 'contain' }}
+        />
       </div>
     </div>
     <div className="pictures-button">
