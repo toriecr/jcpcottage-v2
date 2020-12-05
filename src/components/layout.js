@@ -14,6 +14,7 @@ import Sidebar from "./Sidebar"
 import Header from "./Header"
 import Map from "./Map"
 import Contact from "./Contact"
+import Footer from "./Footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -42,14 +43,7 @@ const Layout = ({ children }) => {
       </div>
       <Contact />
       <Map />
-      <footer style={{
-          // marginTop: `2rem`,
-          backgroundColor: `green`,
-        }}>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-      </footer>
+      <Footer />
     </>
   )
 }
