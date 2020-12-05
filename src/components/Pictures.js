@@ -9,7 +9,7 @@ const Pictures = () => {
       image1: file(relativePath: {eq: "bedroom.jpg"}) {
         id
         childImageSharp {
-          fluid(maxWidth: 300, maxHeight: 430) {
+          fluid(maxWidth: 300, maxHeight: 456) {
             ...GatsbyImageSharpFluid
           }
         }
