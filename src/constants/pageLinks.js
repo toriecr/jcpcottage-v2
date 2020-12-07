@@ -3,18 +3,23 @@ import { Link } from "gatsby"
 const data = [
   {
     id: 1, 
-    text: "home",
+    text: "HOME",
     url: "/"
   }, 
   {
     id: 2, 
-    text: "about",
-    url: "/about"
+    text: "PICTURES",
+    url: "/pictures"
   }, 
   {
     id: 3,
-    text: "amenities floop",
+    text: "AMENITIES",
     url: "/amenities"
+  },
+  {
+    id: 4,
+    text: "CONTACT",
+    url: "/contact"
   }
 ]
 
