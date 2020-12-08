@@ -1,4 +1,44 @@
 .all-amenities {
+  /* height: 95vh; */
+  margin: 0 auto;
   margin-top: 10rem;
-  height: 95vh;
+  margin-bottom: 2rem;
+  max-width: 1170px;
+  padding: 0 2rem 1.45rem;
+}
+
+.care-services {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: .5rem;
+}
+
+.non-care-services {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: .5rem;
+}
+
+.room-amenities {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: .5rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .care-services {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+
+  .non-care-services {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+
+  .room-amenities {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+
 }
