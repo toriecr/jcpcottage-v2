@@ -2,6 +2,46 @@
   background-color: #263642;
   display: grid;
   place-items: center;
+  padding: 1rem;
+}
+
+.footer-desc {
+  display: grid;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.footer-desc h3 {
+  font-weight: bold;
+  color: white;
+  margin-top: 1rem;
+}
+
+.footer-desc p {
+  text-align: left;
+}
+
+.footer-contact {
+  display: grid;
+  text-align: center;
+}
+
+.footer-contact p {
+  text-align: left;
+}
+
+.footer-icon {
+  font-size: xxx-large;
+  color: #6496A2;
+  margin-top: 1rem;
+}
+
+.footer-link li {
+  text-align: left !important;
+}
+
+.footer-link a {
+  color: #6496A2 !important;
 }
 
 @media only screen and (min-width: 768px) {
