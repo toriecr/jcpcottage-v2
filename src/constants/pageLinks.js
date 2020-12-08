@@ -25,8 +25,25 @@ const data = [
 
 const pageLinks = data.map(link => {
   return (
-    <li key={link.id}>
-      <Link to={link.url}>{link.text}</Link>
+    <li 
+      key={link.id}
+      style={{
+        listStyle: `none`
+      }}
+    >
+      <Link 
+        to={link.url}
+        style={{
+          display: `block`,
+          textAlign: `center`,
+          textTransform: `capitalize`,
+          color: `black`,
+          letterSpacing: `0.2rem`,
+          marginBottom: `2rem`,
+          fontSize: `2rem`,
+          textDecoration: `none`
+        }}
+      >{link.text}</Link>
     </li>
   )
 });
