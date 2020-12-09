@@ -21,6 +21,7 @@ const Header = () => {
       <Img fluid={data.image.childImageSharp.fluid} />
       <div className="header-description">
         <div className="header-description-children">
+          <h1 className="header-title" style={{ fontWeight: `bold` }}>JCP Cottage</h1>
           <h1>Where Joy, Caring, and Passion come together.</h1>
           <h3>Where Joy, Caring, and Passion come together.</h3>
           <button>LEARN MORE</button>

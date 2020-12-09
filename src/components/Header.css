@@ -34,10 +34,16 @@ header h3 {
   font-weight: 600;
 }
 
+@media only screen and (min-width: 768px) {
+  .header-title {
+    display: grid;
+    color: white;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .header-description {
     text-align: center;
-
   }
 
   header h1 {
