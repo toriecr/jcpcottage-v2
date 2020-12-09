@@ -32,6 +32,13 @@
   padding: 1em 1.25em;
 }
 
+.pictures-button button:hover {
+  background: white;
+  border: #69C6FA;
+  border-radius: 6px;
+  color: black;
+}
+
 @media only screen and (min-width: 768px) {
   .pictures-container {
     grid-template-columns: repeat(4, 1fr);
