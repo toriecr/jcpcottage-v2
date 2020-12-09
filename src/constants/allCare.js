@@ -3,11 +3,11 @@ import React from "react"
 const allCare = [
   {
     id: 1,
-    text: "Activities of daily living assistance"
+    text: "Coordination with health care providers"
   },
   {
     id: 2,
-    text: "Assistance with dressing"
+    text: "Transportation to medical appointments"
   },
   {
     id: 3,
@@ -15,19 +15,19 @@ const allCare = [
   },
   {
     id: 4,
-    text: "Transportation to medical appointments"
+    text: "Assistance with bathing"
   },
   {
     id: 5,
-    text: "Coordination with health care providers"
+    text: "Activities of daily living assistance"
   },
   {
     id: 6,
-    text: "24-hour supervision"
+    text: "Assistance with dressing"
   },
   {
     id: 7,
-    text: "Assistance with bathing"
+    text: "24-hour supervision"
   },
   {
     id: 8,

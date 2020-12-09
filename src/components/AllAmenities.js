@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Title from "./Title"
 import AllCare from "../constants/allCare"
 import { BiRightArrow } from "react-icons/bi"
@@ -16,43 +17,41 @@ const AllAmenities = () => {
         const { id, text } = amenity;
         return (
           <div key={id} className="care-service">
-            <p>
-              <BiRightArrow></BiRightArrow>
-              {text}
-            </p>
+            <h3 style={{ display: `inline` }}><BiRightArrow></BiRightArrow></h3>&nbsp;&nbsp;
+            <p style={{ display: `inline` }}>{text}</p>
           </div>
         )
       })}
     </div>
     <h2>Non-Care Services</h2>
-    <div className="non-care-services">
+    <div className="care-services">
       <div className="non-care-service">
-        <p>
-          <MdLocalLaundryService></MdLocalLaundryService>
-          Housekeeping and linen services
-        </p>
+        <h3 style={{ display: `inline` }}><MdLocalLaundryService></MdLocalLaundryService></h3>&nbsp;&nbsp;
+        <p style={{ display: `inline` }}>Housekeeping and linen services</p>
       </div>
       <div className="non-care-service">
-        <p>
-          <RiCommunityLine></RiCommunityLine>
-          Community-sponsored activities
-        </p>
+        <h3 style={{ display: `inline` }}><RiCommunityLine></RiCommunityLine></h3>&nbsp;&nbsp;
+        <p style={{ display: `inline` }}>Community-sponsored activities</p>
       </div>
     </div>
     <h2>Room Amenities</h2>
-    <div className="room-amenities">
+    <div className="care-services">
       <div className="room-amenity">
-        <p>
-          <FaPhone></FaPhone>
-          Telephone
-        </p>
+        <h3 style={{ display: `inline` }}><FaPhone></FaPhone></h3>&nbsp;&nbsp;
+        <p style={{ display: `inline` }}>Telephone</p>
       </div>
       <div className="room-amenity">
-        <p>
-          <FaWifi></FaWifi>
-          Wifi 
-        </p>
+        <h3 style={{ display: `inline` }}><FaWifi></FaWifi></h3>&nbsp;&nbsp;
+        <p style={{ display: `inline` }}>Wifi</p>
       </div>
+    </div>
+    <div className="pictures-button" 
+      style={{
+        marginTop: `5rem`
+      }}>
+      <Link to="/">
+        <button>Back to home</button>
+      </Link>
     </div>
   </section>
 }

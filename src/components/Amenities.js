@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Title from "./Title"
 import amenities from "../constants/amenities"
 
@@ -17,12 +18,17 @@ const Amenities = () => {
         const { id, icon, text } = amenity;
         return (
           <div key={id} className="amenity">
-            <h3>{icon} {text}</h3>
+            <h3 style={{ display: `inline` }}>{icon}</h3>&nbsp;&nbsp;
+            <p style={{ display: `inline` }}>{text}</p>
           </div>
         )
       })}
     </div>
-
+    <div className="pictures-button" style={{ marginTop: `4rem` }}>
+      <Link to="/amenities">
+        <button>View all amenities</button>
+      </Link>
+    </div>
   </section>
 }
 
