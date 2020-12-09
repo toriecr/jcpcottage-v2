@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import Img from "gatsby-image"
 import { graphql, useStaticQuery } from "gatsby"
 import Title from "./Title"
@@ -57,7 +58,9 @@ const Pictures = () => {
       </div>
     </div>
     <div className="pictures-button">
-      <button>View more</button>
+      <Link to="/pictures">
+        <button>View more</button>
+      </Link>
     </div>
   </section>
 }
