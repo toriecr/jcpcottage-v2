@@ -45,7 +45,11 @@ const PicturesPage = () => {
           ) : null}
         </ModalGateway>
       </div>
-      <div className="pictures-button">
+      <div className="pictures-button"
+        style={{
+          marginTop: `4rem`,
+          marginBottom: `4rem`
+        }}>
         <Link to="/">
           <button>Go Back</button>
         </Link>

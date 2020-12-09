@@ -57,7 +57,7 @@ const Pictures = () => {
         />
       </div>
     </div>
-    <div className="pictures-button">
+    <div className="pictures-button" style={{ marginTop: `4rem` }}>
       <Link to="/pictures">
         <button>View more</button>
       </Link>
