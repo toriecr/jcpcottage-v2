@@ -28,7 +28,11 @@ const Contact = () => {
           <h3>Your request will be answered within 24 hours.</h3>
         </div>
         <div className="contact-underline"></div>
-        <form>
+        <form
+          target="_blank"
+          action="https://formsubmit.co/patlee@jcpcottage.com"
+          method="POST"
+        >
           <div className="form-inputs">
             <div className="name-email">
               <input type="text" name="name" placeholder="Name" className="input input-name" />
