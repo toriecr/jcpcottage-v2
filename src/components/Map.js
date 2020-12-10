@@ -1,5 +1,7 @@
-import React from 'react'
-import { GoogleMap, LoadScript } from '@react-google-maps/api';
+import React, { useState } from 'react'
+import { GoogleMap, LoadScript, Marker, InfoWindow } from '@react-google-maps/api';
+import { graphql, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 
 const containerStyle = {
   width: '100%',
@@ -7,21 +9,56 @@ const containerStyle = {
 };
 
 const center = {
-  lat: -3.745,
-  lng: -38.523
+  lat: 34.484110,
+  lng: -117.352580
 };
 
 function Map() {
+  const [selectedMarker, setSelectedMarker] = useState(null);
+  const data = useStaticQuery(graphql`
+    {
+      image: file(relativePath: {eq: "header.jpg"}) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 2592) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <LoadScript
-      googleMapsApiKey="AIzaSyBnzL9f5oIOgV2-jxXaMe_tPFRaT96XewU"
-    >
+      googleMapsApiKey={`${process.env.GATSBY_API_KEY}`}
+    > 
       <GoogleMap
         mapContainerStyle={containerStyle}
         center={center}
-        zoom={10}
+        zoom={16}
       >
-        { /* Child components, such as markers, info windows, etc. */ }
+        { 
+          <Marker 
+            position={center} 
+            onMouseOver={() => {
+              setSelectedMarker(true);
+            }}
+          />
+        }
+        {selectedMarker && (
+          <InfoWindow 
+            position={center}
+            onCloseClick={()=> {
+              setSelectedMarker(null);
+            }}
+          >
+            <div style={{ textAlign: `center` }}>
+              <h2>JCP Cottage</h2>
+              <p>14241 La Mirada St. Victorville, CA 92392</p>
+              <Img fluid={data.image.childImageSharp.fluid} /> 
+            </div>
+          </InfoWindow>
+        )}
         <></>
       </GoogleMap>
     </LoadScript>
