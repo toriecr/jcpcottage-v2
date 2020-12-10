@@ -4,7 +4,7 @@ const data = [
   {
     id: 1,
     icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
-    url: "https://www.facebook.com",
+    url: "https://www.facebook.com/pages/category/Retirement---Assisted-Living-Facility/JCP-Senior-Care-LLC-410260369313127/",
   }
 ]
 

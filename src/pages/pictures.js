@@ -4,6 +4,7 @@ import Gallery from "react-photo-gallery"
 import Carousel, { Modal, ModalGateway } from "react-images"
 import Layout from "../components/layout"
 import Title from "../components/Title"
+import SEO from "../components/seo"
 
 import photos from "../constants/photos"
 
@@ -24,6 +25,7 @@ const PicturesPage = () => {
 
   return (
     <Layout>
+      <SEO title="Pictures" />
       <div style={{
         marginTop: `10rem`
       }}>
