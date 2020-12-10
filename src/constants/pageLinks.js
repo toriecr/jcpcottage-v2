@@ -19,7 +19,7 @@ const data = [
   {
     id: 4,
     text: "CONTACT",
-    url: "/contact"
+    url: "/#contact"
   }
 ]
 
