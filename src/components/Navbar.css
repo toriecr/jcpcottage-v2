@@ -3,7 +3,6 @@
 Navbar
 ===============
 */
-
 .navbar {
   position: absolute;
   top: 0;
@@ -34,30 +33,22 @@ Navbar
   border-color: transparent;
   color: lightblue;
   cursor: pointer;
-  /* transition: var(--transition); */
-}
-.toggle-btn:hover {
-  /* color: var(--clr-primary-2); */
 }
 .nav-links {
   display: none;
 }
-
 .logo {
   text-align: center;
 }
-
 .logo-img {
   width: 38px;
   display: inline-block;
   vertical-align: middle;
 }
-
 .logo-heading {
   display: inline-block;
   vertical-align: middle;
 }
-
 .logo-heading h4 {
   margin: 0.5rem 0 0 0.5rem;
 }
@@ -79,33 +70,26 @@ Navbar
   }
   .nav-links a {
     text-transform: capitalize;
-    /* color: var(--clr-grey-1); */
     font-weight: bold;
-    /* letter-spacing: var(--spacing);
-    transition: var(--transition); */
     padding: 0.5rem 0;
     text-decoration: none;
 
-    color: #3A5668 !important;
+    color: var(--clr-primary-text) !important;
     font-size: 18px !important;
     letter-spacing: 0.1rem !important;
     margin-bottom: 0 !important;
   }
-
   .nav-links a:hover {
-    /* color: var(--clr-primary-5); */
-    /* box-shadow: 0px 2px var(--clr-primary-5); */
+    color: var(--clr-light-grey2) !important;
   }
   .nav-center {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
   }
-
   .logo-img {
     width: 76px;
   }
-
   .logo-heading {
     display: none;
   }
@@ -115,7 +99,6 @@ Navbar
   .navbar {
     background: transparent;
   }
-
   .logo-heading {
     display: none;
   }

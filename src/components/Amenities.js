@@ -24,7 +24,7 @@ const Amenities = () => {
         )
       })}
     </div>
-    <div className="pictures-button" style={{ marginTop: `4rem` }}>
+    <div className="primary-button" style={{ marginTop: `4rem` }}>
       <Link to="/amenities">
         <button>View all amenities</button>
       </Link>
