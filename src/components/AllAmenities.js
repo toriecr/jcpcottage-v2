@@ -45,7 +45,7 @@ const AllAmenities = () => {
         <p style={{ display: `inline` }}>Wifi</p>
       </div>
     </div>
-    <div className="pictures-button" 
+    <div className="primary-button" 
       style={{
         marginTop: `5rem`
       }}>

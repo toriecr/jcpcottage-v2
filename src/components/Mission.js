@@ -15,7 +15,6 @@ const Mission = () => {
       }
     }
   `)
-
   return <section className="mission">
     <div className="mission-description">
       <h2>Our Mission</h2>
@@ -27,5 +26,4 @@ const Mission = () => {
     </div>
   </section>
 }
-
 export default Mission;

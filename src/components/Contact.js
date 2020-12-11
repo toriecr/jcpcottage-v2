@@ -15,7 +15,6 @@ const Contact = () => {
       }
     }
   `)
-
   return <section className="contact" id="contact">
     <div className="contact-img">
       <Img fluid={data.image.childImageSharp.fluid} />   
@@ -53,5 +52,4 @@ const Contact = () => {
     </div>
   </section>
 }
-
 export default Contact;

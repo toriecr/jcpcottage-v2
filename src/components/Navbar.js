@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import { FaAlignRight } from "react-icons/fa"
 import PageLinks from "../constants/pageLinks"
 import { graphql, useStaticQuery } from "gatsby"
@@ -22,10 +23,14 @@ const Navbar = ({ toggleSidebar }) => {
       <div className="nav-header">
         <div className="logo">
           <div className="logo-img">
-            <Img fluid={data.image.childImageSharp.fluid} />  
+            <Link to="/">
+              <Img fluid={data.image.childImageSharp.fluid} />  
+            </Link>
           </div>
           <div className="logo-heading">
-            <h4>JCP Cottage</h4>
+            <Link to="/">
+              <h4>JCP Cottage</h4>
+            </Link>
           </div>
         </div>
         <button type="button" className="toggle-btn" onClick={toggleSidebar}>

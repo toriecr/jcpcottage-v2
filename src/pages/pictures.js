@@ -5,9 +5,7 @@ import Carousel, { Modal, ModalGateway } from "react-images"
 import Layout from "../components/layout"
 import Title from "../components/Title"
 import SEO from "../components/seo"
-
 import photos from "../constants/photos"
-
 
 const PicturesPage = () => {
  const [currentImage, setCurrentImage] = useState(0);
@@ -22,7 +20,6 @@ const PicturesPage = () => {
     setCurrentImage(0);
     setViewerIsOpen(false);
   };
-
   return (
     <Layout>
       <SEO title="Pictures" />
@@ -47,7 +44,7 @@ const PicturesPage = () => {
           ) : null}
         </ModalGateway>
       </div>
-      <div className="pictures-button"
+      <div className="primary-button"
         style={{
           marginTop: `4rem`,
           marginBottom: `4rem`
@@ -59,5 +56,4 @@ const PicturesPage = () => {
     </Layout>
   );
 }
-
 export default PicturesPage;
