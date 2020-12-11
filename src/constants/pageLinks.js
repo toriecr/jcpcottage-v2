@@ -3,26 +3,25 @@ import { Link } from "gatsby"
 const data = [
   {
     id: 1, 
-    text: "HOME",
+    text: "Home",
     url: "/"
   }, 
   {
     id: 2, 
-    text: "PICTURES",
+    text: "Pictures",
     url: "/pictures"
   }, 
   {
     id: 3,
-    text: "AMENITIES",
+    text: "Amenities",
     url: "/amenities"
   },
   {
     id: 4,
-    text: "CONTACT",
+    text: "Contact",
     url: "/#contact"
   }
 ]
-
 const pageLinks = data.map(link => {
   return (
     <li 
@@ -37,7 +36,7 @@ const pageLinks = data.map(link => {
           display: `block`,
           textAlign: `center`,
           textTransform: `capitalize`,
-          color: `black`,
+          color: `#3A5668`,
           letterSpacing: `0.2rem`,
           marginBottom: `2rem`,
           fontSize: `2rem`,
@@ -47,7 +46,6 @@ const pageLinks = data.map(link => {
     </li>
   )
 });
-
 export default ({ styleClass }) => {
   return (
     <ul className={`${styleClass ? styleClass : ""}`}>

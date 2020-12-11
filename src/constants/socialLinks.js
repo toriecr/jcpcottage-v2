@@ -7,7 +7,6 @@ const data = [
     url: "https://www.facebook.com/pages/category/Retirement---Assisted-Living-Facility/JCP-Senior-Care-LLC-410260369313127/",
   }
 ]
-
 const links = data.map(link => {
   return (
     <li 
@@ -21,7 +20,7 @@ const links = data.map(link => {
         href={link.url} 
         className="social-link"
         style={{
-          color: `black`,
+          color: `blue`,
           textDecoration: `none`,
           fontSize: `xxx-large`
         }}
@@ -31,7 +30,6 @@ const links = data.map(link => {
     </li>
   )
 })
-
 export default ({ styleClass }) => {
   return (
     <ul className={`social-links ${styleClass ? styleClass : ""}`}>{links}</ul>

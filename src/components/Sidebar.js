@@ -14,5 +14,4 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     </div>
   </aside>
 }
-
 export default Sidebar;
