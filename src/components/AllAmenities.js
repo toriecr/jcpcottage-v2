@@ -55,5 +55,4 @@ const AllAmenities = () => {
     </div>
   </section>
 }
-
 export default AllAmenities;

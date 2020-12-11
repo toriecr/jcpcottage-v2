@@ -31,5 +31,4 @@ const Amenities = () => {
     </div>
   </section>
 }
-
 export default Amenities;

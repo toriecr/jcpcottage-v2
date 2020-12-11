@@ -33,7 +33,6 @@ const Pictures = () => {
       }
     }
   `)
-
   return <section
   style={{
     margin: `0 auto`,
@@ -64,5 +63,4 @@ const Pictures = () => {
     </div>
   </section>
 }
-
 export default Pictures;
