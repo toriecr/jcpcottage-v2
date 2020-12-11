@@ -41,7 +41,7 @@ const amenities = [
   {
     id: 8,
     icon: <FaUserNurse className="amenities-icon" />,
-    text: "Trained staff 24/7."
+    text: "Trained staff on site 24/7."
   }
 ]
 
