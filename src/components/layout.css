@@ -1,6 +1,5 @@
 @import 'Navbar.css';
 @import 'Sidebar.css';
-@import "Header.css";
 @import "Services.css";
 @import "Pictures.css";
 @import "Title.css";
@@ -22,7 +21,7 @@
   --clr-light-grey3: rgb(148, 148, 148);
   --clr-light-blue1: rgb(173, 216, 230);
   --clr-light-blue2: rgb(116, 195, 222);
-} /* Primary button */
+} /* Global custom classes */
 .primary-button {
   display: grid;
   place-items: center;
@@ -48,7 +47,54 @@
   background: var(--clr-primary-text);
   margin-left: auto;
   margin-right: auto;
-}/* Default Gatsby CSS */
+} /* Header */
+header {
+  margin-top: 5rem;
+  position: relative;
+}
+.header-description {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+.header-description-children button {
+  font-size: small;
+}
+header h1 {
+  display: none;
+}
+header h3 {
+  color: white;
+  font-weight: 600;
+}
+@media only screen and (min-width: 768px) {
+  .header-title {
+    display: grid;
+    color: white;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .header-description {
+    text-align: center;
+  }
+  .header-description-children button {
+    font-size: medium;
+  }
+  header h1 {
+    display: grid;
+    color: white;
+  }
+  header h3 {
+    display: none;
+  }
+}
+
+
+/* Default Gatsby CSS */
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

@@ -3,7 +3,7 @@ import services from "../constants/services"
 import Title from "./Title"
 
 const Services = () => {
-  return <section
+  return <section id="services"
   style={{
     margin: `0 auto`,
     marginBottom: `4rem`,

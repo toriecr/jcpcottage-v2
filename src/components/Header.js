@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Img from "gatsby-image"
 
 const Header = () => {
@@ -15,7 +15,6 @@ const Header = () => {
       }
     }
   `)
-
   return <header>
     <div className="header-container">
       <Img fluid={data.image.childImageSharp.fluid} />
@@ -24,11 +23,14 @@ const Header = () => {
           <h1 className="header-title" style={{ fontWeight: `bold` }}>JCP Cottage</h1>
           <h1>Where Joy, Caring, and Passion come together.</h1>
           <h3>Where Joy, Caring, and Passion come together.</h3>
-          <button>LEARN MORE</button>
+          <div className="primary-button">
+            <Link to="/#services">
+              <button>Learn more</button>
+            </Link>
+          </div>
         </div>
       </div>
     </div>
   </header>
 }
-
 export default Header;
